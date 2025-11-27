@@ -55,9 +55,6 @@
 
 - **Logger:** SLF4J
 
----
 
-## 🚀 Getting Started
 
-*(Add your setup and execution instructions here)*
 
