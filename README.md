@@ -1,12 +1,12 @@
 # Test Automation Project - SauceDemo Login
 
-## 📋 Task Description
+## Task Description
 
 **Application URL:** https://www.saucedemo.com/
 
 ---
 
-## 🎯 Test Cases
+## Test Cases
 
 ### UC-1: Test Login form with empty credentials
 1. Type any credentials into "Username" and "Password" fields
@@ -31,7 +31,7 @@
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -44,7 +44,7 @@
 
 ---
 
-## 🎨 Optional Implementations
+## Optional Implementations
 
 - **Design Patterns:**
   - Singleton
@@ -60,3 +60,4 @@
 ## 🚀 Getting Started
 
 *(Add your setup and execution instructions here)*
+
