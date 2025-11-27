@@ -1,0 +1,29 @@
+New-Item .gitignore -ItemType File
+```
+
+Abrí el `.gitignore` y pegá este contenido:
+```
+# Compiled class files
+*.class
+target/
+
+# Log files
+*.log
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Selenium cache
+.cache/
