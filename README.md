@@ -1,60 +1,25 @@
-# Test Automation Project - SauceDemo Login
+# SauceDemo Login Tests — Selenium · JUnit 5 · Parallel
 
-## Task Description
+My first UI automation project in the EPAM track: data-driven login tests for [SauceDemo](https://www.saucedemo.com).
 
-**Application URL:** https://www.saucedemo.com/
+## Test cases
 
----
+| ID | Scenario | Expected |
+|---|---|---|
+| UC-1 | Type credentials, clear both, submit | Error: *"Username is required"* |
+| UC-2 | Type username and password, clear password, submit | Error: *"Password is required"* |
+| UC-3 | Log in with each accepted user and `secret_sauce` | Dashboard title *"Swag Labs"* |
 
-## Test Cases
+## Implementation
 
-### UC-1: Test Login form with empty credentials
-1. Type any credentials into "Username" and "Password" fields
-2. Clear the inputs
-3. Hit the "Login" button
-4. **Expected Result:** Check the error message: "Username is required"
+- **Page Object** (`LoginPage`) with **XPath** locators.
+- **Data-driven** tests: every accepted username runs through the same test.
+- **Parallel execution** with JUnit 5 (concurrent classes and methods, 3 threads).
+- Driver manager for **Firefox and Edge**, plus test logging.
 
-### UC-2: Test Login form with credentials by passing Username
-1. Type any credentials in username
-2. Enter password
-3. Clear the "Password" input
-4. Hit the "Login" button
-5. **Expected Result:** Check the error message: "Password is required"
+## Stack
 
-### UC-3: Test Login form with credentials by passing Username & Password
-1. Type credentials in username which are under Accepted username sections
-2. Enter password as "secret_sauce"
-3. Click on Login and validate the title "Swag Labs" in the dashboard
-4. Provide parallel execution, add logs for tests and use Data Provider to parametrize tests
-
-**Note:** Make sure that all tasks are supported by these 3 conditions: UC-1, UC-2, UC-3.
+Java · Selenium WebDriver · JUnit 5 · Hamcrest · Maven
 
 ---
-
-## Technical Stack
-
-| Component | Technology |
-|-----------|-----------|
-| **Test Automation Tool** | Selenium WebDriver |
-| **Project Builder** | Maven |
-| **Browsers** | Firefox, Edge |
-| **Location Strategy** | XPath |
-| **Test Runner** | JUnit |
-| **Assertions** | Hamcrest |
-
----
-
-## Optional Implementations
-
-- **Design Patterns:**
-  - Singleton
-  - Adapter
-  - Strategy
-
-- **Test Automation Approach:** BDD (Behavior-Driven Development)
-
-- **Logger:** SLF4J
-
-
-
-
+👉 See where this ended up: **[selenium-framework-patterns](https://github.com/gomezLucila25/selenium-framework-patterns)**, with design patterns, BDD, Allure and Jenkins.
