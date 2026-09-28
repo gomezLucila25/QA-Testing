@@ -22,4 +22,4 @@ My first UI automation project in the EPAM track: data-driven login tests for [S
 Java · Selenium WebDriver · JUnit 5 · Hamcrest · Maven
 
 ---
-👉 See where this ended up: **[selenium-framework-patterns](https://github.com/gomezLucila25/selenium-framework-patterns)**, with design patterns, BDD, Allure and Jenkins.
+See where this ended up: **[selenium-framework-patterns](https://github.com/gomezLucila25/selenium-framework-patterns)**, with design patterns, BDD, Allure and Jenkins.
